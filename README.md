@@ -4,4 +4,3 @@
 <h2 align = "center"><img src = "https://octodex.github.com/images/orderedlistocat.png " height = "250" ><br/> 
 Программистом быть сложно, но очень интересно))</h2>
 
-edit autoexec.bat
