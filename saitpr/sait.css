@@ -9,7 +9,7 @@ h1{
 
 .header{	
 	padding: 50px;
-	text-align: center;
+	text-align: left;
 	background-color: #86cdfc;
 	color: rgb(216, 160, 97);
 	background-image: url(background.png);
@@ -20,7 +20,9 @@ overflow: hidden;
 color: rgb(255, 222, 190);
 text-decoration: none;
 }
+.name{
 
+}
 .navbar a{				
 	display:block;
 	color:rgb(255, 255, 255);
@@ -76,10 +78,58 @@ text-decoration: none;
 	background-color :rgb(255, 222, 190);
 	color: rgb(200, 160, 50);
 }
+
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 250px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.price{
+	color: grey;
+	font-size: 22px;
+}
+
+.card button{
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: wheat;
+	background-color:#000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.row-grid{
+	padding: 20px;
+	display: grid;
+	gap:50px;
+	align-items: center;
+	grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+}
+.card button:hover{
+	opacity: 0.7;
+}
+
 .footer{
 	padding: 20px;
 	text-align: center;
 	background:#ddd;
 }
 
+@media screen and(max-width: 700px) {
+	.row{
+		flex-direction: column;
+	}
+}
 
+@media screen and(max-width: 400px) {
+	.navbar a {
+		float: none;
+		width: 100%;
+	}
+}
